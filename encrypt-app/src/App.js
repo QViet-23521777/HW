@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import AnalysisTab from "./components/AnalysisTab";
 import AsymmetricTab from "./components/AsymmetricTab";
+import E2EETab from "./components/E2EETab";
 import HashTab from "./components/HashTab";
 import SymmetricTab from "./components/SymmetricTab";
 
@@ -30,6 +31,9 @@ function App() {
           >
             Bất đối xứng
           </button>
+          <button type="button" className={`tab ${tab === "e2ee" ? "active" : ""}`} onClick={() => setTab("e2ee")}>
+            E2EE
+          </button>
           <button type="button" className={`tab ${tab === "hash" ? "active" : ""}`} onClick={() => setTab("hash")}>
             Băm / MAC
           </button>
@@ -44,6 +48,7 @@ function App() {
 
         {tab === "symmetric" ? <SymmetricTab /> : null}
         {tab === "asymmetric" ? <AsymmetricTab /> : null}
+        {tab === "e2ee" ? <E2EETab /> : null}
         {tab === "hash" ? <HashTab /> : null}
         {tab === "analysis" ? <AnalysisTab /> : null}
       </main>

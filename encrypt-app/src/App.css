@@ -344,6 +344,36 @@ select:focus {
   word-break: break-all;
 }
 
+/* E2EE KEY DISPLAY */
+.e2eeKeys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.e2eeKeyBox {
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.e2eeKeyBox label {
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.e2eeKeyBox span {
+  font-family: monospace;
+  font-size: 0.78rem;
+  color: var(--text);
+  word-break: break-all;
+}
+
 .toast {
   margin-top: 10px;
   font-size: 0.85rem;
@@ -388,6 +418,10 @@ select:focus {
 
 @media (max-width: 600px) {
   .rsaKeys {
+    grid-template-columns: 1fr;
+  }
+
+  .e2eeKeys {
     grid-template-columns: 1fr;
   }
 }
