@@ -1,5 +1,9 @@
 import React, { useMemo, useState } from "react";
-import { runSymmetric, SYMMETRIC_ALGO, symmetricInfo } from "../crypto/symmetric";
+import {
+  runSymmetric,
+  SYMMETRIC_ALGO,
+  symmetricInfo,
+} from "../crypto/symmetric";
 
 function copyToClipboard(setCopyMessage, text) {
   if (!text) return;
