@@ -14,10 +14,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <span>
-          Lưu ý: các thuật toán “cổ điển”, DES và các demo là để học tập. Dùng
-          AES-GCM/ChaCha20 + key quản lý đúng cách cho ứng dụng thực tế.
-        </span>
+        <span>Dùng AES + key quản lý đúng cách cho ứng dụng thực tế.</span>
       </footer>
     </div>
   );
